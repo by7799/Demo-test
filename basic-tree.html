@@ -127,13 +127,8 @@
 			let nodeUpdate = node.transition()
 						.duration(duration)
 						.attr('transform', function(d) {
-							'translate(' + d.y + ',' + d.x + ')'
+							return 'translate(' + d.y + ',' + d.x + ')'
 						})
-			nodeUpdate = node.transition()
-				.duration(duration)
-				.attr('transform', function(d) {
-					return 'translate(' + d.y + ',' + d.x + ')'
-				})
 			nodeUpdate.select('rect')
 				.attr('x', -27)
 				.attr('y', -20)
